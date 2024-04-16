@@ -1,9 +1,9 @@
 from flask import Flask, jsonify
 from flask_cors import CORS, cross_origin
 
-from app.algorithms.utils import load_world, encontrar_estado_inicial
-from app.algorithms.amplitud import amplitud
-from app.algorithms.costo import costo_uniforme
+from .app.algorithms.utils import load_world, encontrar_estado_inicial
+from .app.algorithms.amplitud import amplitud
+from .app.algorithms.costo import costo_uniforme
 
 
 app = Flask(__name__)
